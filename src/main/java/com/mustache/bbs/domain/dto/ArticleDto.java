@@ -1,5 +1,6 @@
 package com.mustache.bbs.domain.dto;
 
+import com.mustache.bbs.entity.Article;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -14,5 +15,11 @@ public class ArticleDto {
         this.id = id;
         this.title = title;
         this.content = content;
+    }
+
+    // ArticleDto를 toEntity method로
+    // DTO객체를 entity로 변환하는 method
+    public Article toEntity(){
+        return new Article(title, content);
     }
 }

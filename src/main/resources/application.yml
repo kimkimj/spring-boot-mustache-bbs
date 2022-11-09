@@ -7,5 +7,6 @@ spring:
     password: cheese123
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    hibernate.ddl-auto: update
