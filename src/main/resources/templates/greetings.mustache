@@ -1,3 +1,12 @@
-<div>
-    <hi>{{id}} {{username}} Hello!</h1>
-</div>
+
+    <div>
+        {{# id}}
+            <h1>{{id}} {{username}} Hello!</h1>
+        {{/id}} id}}}
+
+        <!-- id가 없을 때 -->
+        {{^ id}}
+            <h1>{{username}} Hello! </h1>
+        {{/ id}}
+    </div>
+
